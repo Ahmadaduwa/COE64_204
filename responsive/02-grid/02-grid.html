@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-grid</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      .container {
+        border: 1px solid rgb(212, 212, 212);
+      }
+
+      div.row div,
+      building7.row div,
+      section.row div {
+        min-height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+        background: rgb(236, 236, 236);
+      }
+    </style>
+
+    <div class="container-fluid">
+      <h1>Grid</h1>
+      <div class="row">
+        <div class="col">1 of 2</div>
+        <div class="col">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+      </div>
+
+      <h1>Grid SM</h1>
+      <div class="row">
+        <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col col-12 col-sm-12">.col-12 .col-sm-12</div>
+      </div>
+
+      <h1>Grid MD</h1>
+      <section class="row">
+        <div class="col col-12 col-md-3">.col-12 .col-md-3</div>
+        <div class="col col-12 col-md-3">.col-12 .col-md-3</div>
+        <div class="col col-12 col-md-3">.col-12 .col-md-3</div>
+        <div class="col col-12 col-md-3">.col-12 .col-md-3</div>
+        <div class="col col-12 col-md-12">.col-12 .col-md-12</div>
+      </section>
+
+      <h1>Grid LG</h1>
+      <building7 class="row">
+        <div class="col col-12 col-lg-4">.col-12 .col-lg-4</div>
+        <div class="col col-12 col-lg-4">.col-12 .col-lg-4</div>
+        <div class="col col-12 col-lg-4">.col-12 .col-lg-4</div>
+        <div class="col col-6 col-lg-4">.col-6 .col-lg-4</div>
+        <div class="col col-6 col-lg-8">.col-6 .col-lg-8</div>
+
+        <div class="col col-12 col-lg-12">.col-12 .col-lg-12</div>
+      </building7>
+
+      <h2>Grid Warning</h2>
+      <div class="row">
+        <div class="col col-12 col-lg-6">.col-12 .col-lg-6</div>
+        <div class="col col-12 col-lg-8">.col-12 .col-lg-8</div>
+      </div>
+      <h2>Grid Order</h2>
+      <div class="row">
+        <div class="col col-12 col-lg-4 order-2 order-lg-1">
+          .col-12 .col-lg-4 .order-2 .order-lg-1
+        </div>
+        <div class="col col-12 col-lg-8 order-1 order-lg-2">
+          .col-12 .col-lg-8 .order-1 .order-lg-2
+        </div>
+      </div>
+
+      <h1>Grid Nesting</h1>
+      <div class="row">
+        <div class="col-sm-3">Level 1: .col-sm-3</div>
+        <div class="col-sm-9 py-2">
+          <div class="row">
+            <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+            <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
