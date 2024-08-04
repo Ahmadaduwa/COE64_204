@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-image {
+    flex: 0 0 100px; /* Adjust the width as needed */
+    margin-right: 20px;
+}
+
+.item-image img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #e68900;
+}
+
+.menushow {
+    
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.itemshow {
+    
+    flex: 1;
+}
+
+.itemshow h3 {
+    margin-bottom: 5px;
+}
+
+.itemshow p {
+    margin-bottom: 5px;
+}
+
+.showimage {
+    flex: 0 0 100px; /* Adjust the width as needed */
+    margin-right: 20px;
+}
+
+.showimage img {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}

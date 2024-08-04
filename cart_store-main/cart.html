@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Restaurant Name</h1>
+    </div>
+
+    <div class="container">
+        <h2>Your Cart</h2>
+        <div class="cart-item">
+            <div class="item-image">
+                <img src="./images/pizza.jpg" alt="Pizza">
+            </div>
+            <div class="item-details">
+                <h3>Pizza</h3>
+                <p>Quantity: <input type="number" value="1" min="1"></p>
+                <p class="price">$10.00</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <div class="item-image">
+                <img src="./images/burger.jpg" alt="Burger">
+            </div>
+            <div class="item-details">
+                <h3>Burger</h3>
+                <p>Quantity: <input type="number" value="1" min="1"></p>
+                <p class="price">$8.00</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <div class="item-image">
+                <img src="./images/pasta.jpg" alt="Pasta">
+            </div>
+            <div class="item-details">
+                <h3>Pasta</h3>
+                <p>Quantity: <input type="number" value="1" min="1"></p>
+                <p class="price">$12.00</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="total">
+            <h3>Total: $30.00</h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
